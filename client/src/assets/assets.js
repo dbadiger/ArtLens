@@ -40,17 +40,17 @@ export const assets = {
 export const stepsData = [
     {
       title: 'Describe Your Vision',
-      description: 'Type a phrase, sentence, or paragraph that describes the image you want to create.',
+      description: 'Type a detailed text description of the image you want to create. Be as creative as you like! Example: "A futuristic cityscape at sunset with glowing neon lights."',
       icon: step_icon_1,
     },
     {
-      title: 'Watch the Magic',
-      description: 'Our AI-powered engine will transform your text into a high-quality, unique image in seconds.',
+      title: 'Generate and Customize',
+      description: 'Watch ArtLens create your image in seconds. Make adjustments if needed, and fine-tune your artwork.',
       icon: step_icon_2,
     },
     {
       title: 'Download & Share',
-      description: 'Instantly download your creation or share it with the world directly from our platform.',
+      description: 'Save your high-quality image and showcase your creativity to the world.',
       icon: step_icon_3,
     },
   ];
