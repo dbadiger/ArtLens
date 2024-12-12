@@ -58,24 +58,24 @@ export const stepsData = [
 export const testimonialsData = [
     {
         image:profile_img_1,
-        name:'Donald Jackman',
+        name:'Jeevan B',
         role:'Graphic Designer',
         stars:5,
-        text:`I've been using bg.removal for nearly two years, primarily for Instagram, and it has been incredibly user-friendly, making my work much easier.`
+        text:`ArtLens has completely transformed the way I approach design projects. It's fast, reliable, and incredibly inspiring!`
     },
     {
         image:profile_img_2,
-        name:'Richard Nelson',
+        name:'Shreyas S',
         role:'Content Creator',
-        stars:5,
-        text:`I've been using bg.removal for nearly two years, primarily for Instagram, and it has been incredibly user-friendly, making my work much easier.`
+        stars:4,
+        text:`ArtLens has revolutionized the way my team approaches creative projects. The AI is powerful, and the results are professional-grade.`
     },
     {
         image:profile_img_1,
         name:'Donald Jackman',
         role:' Graphic Designer',
         stars:5,
-        text:`I've been using bg.removal for nearly two years, primarily for Instagram, and it has been incredibly user-friendly, making my work much easier.`
+        text:`From landscapes to abstract pieces, the results always exceed my expectations. ArtLens fuels my imagination!`
     },
 ]
 
