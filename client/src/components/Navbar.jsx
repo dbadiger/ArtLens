@@ -3,7 +3,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import { assets } from "../assets/assets"
 import { AppContext } from '../context/Appcontext'
 const Navbar = () => {
-    const {user, setUser} = useContext(AppContext)
+    const {user, setUser, setShowLogin} = useContext(AppContext)
     const navigate = useNavigate();
     return (
         <div className='flex items-center justify-between py-4'>
@@ -33,7 +33,9 @@ const Navbar = () => {
                     // {/* For Logged Out user */}
                     <div className="flex items-center gap-2 sm:gap-5">
                         <p onClick={() => navigate("/buy")} className='cursor-pointer'>Pricing</p>
-                        <button className='cursor-pointer bg-zinc-800 text-white px-10 py-2 sm:px-10 test-sm rounded-full'>Login</button>
+                        <button className='cursor-pointer bg-zinc-800 text-white px-10 py-2 sm:px-10 test-sm rounded-full'
+                        onClick={()=>setShowLogin(true)}
+                        >Login</button>
                     </div>
                 }
 
