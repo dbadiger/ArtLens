@@ -1,16 +1,39 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import { assets } from '../assets/assets'
+import { motion } from "framer-motion"
+import { AppContext } from "../context/Appcontext"
+import { useNavigate } from "react-router-dom"
 
 const GenerateBtn = () => {
+  
+  const { user, setShowLogin } = useContext(AppContext)
+  const navigate = useNavigate()
+  const onclickHandler = () => {
+    if (user) {
+      navigate("/result")
+    }
+    else {
+      setShowLogin(true)
+    }
+  }
+
   return (
-    <div className='pb-16 text-center'>
+    <motion.div
+      initial={{ opacity: 0.2, y: 100 }}
+      transition={{ duration: 1 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+
+      className='pb-16 text-center'>
       <h1 className='text-2xl mb:text-3xl lg"text-4xl mt-4 font-semibold text-neutral-800 py-6'>Generate Your Image Now</h1>
-      <button className='bg-black text-white rounded-full inline-flex px-12 py-3 m-auto items-center
+      <button
+      onClick={onclickHandler}
+      className='bg-black text-white rounded-full inline-flex px-12 py-3 m-auto items-center
       hover:scale-105 transition-all duration-500 gap-2
       '>Generate Image
-        <img src={assets.star_group} alt="" className='h-6'/>
+        <img src={assets.star_group} alt="" className='h-6' />
       </button>
-    </div>
+    </motion.div>
   )
 }
 
