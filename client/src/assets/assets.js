@@ -19,6 +19,10 @@ import star_group from './star_group.png'
 import credit_star from './credit_star.svg'
 import profile_icon from './profile_icon.png'
 import user_icon from "./user.png"
+import tiger from "./tiger.webp"
+import women from "./women.webp"
+import lion from "./lion.webp"
+import bmw from "./bmw.webp"
 
 export const assets = {
     logo,
@@ -36,7 +40,12 @@ export const assets = {
     star_group,
     credit_star,
     profile_icon,
-    user_icon
+    user_icon,
+    lion,
+    tiger,
+    women,
+    bmw
+  
 }
 
 export const stepsData = [
